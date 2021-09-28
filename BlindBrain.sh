@@ -115,7 +115,7 @@ done
 
 if [[ $conf == "y" ]] ; then
 	ls Datasets/"$dataset" | grep .nii | cut -d "." -f 1 > Datasets/"$dataset"/"$dataset"_list.txt
-	bash Materials/Scripts/BlindBrain_"$analysis".sh "$dataset"
+	bash BlindBrain_"$analysis".sh "$dataset"
 else
 	echo "See you when you are sure!"	
 fi
